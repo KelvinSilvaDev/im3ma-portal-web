@@ -46,7 +46,9 @@ export function Header() {
   return (
     <header className="bg-[#1f1f1f] w-full">
       <div className="container flex justify-evenly items-center py-4 md:px-8 relative mx-auto">
-        <Image src="/next.svg" alt="logo" width={100} height={100} />
+          <Image src="/mema_nome_branco.png" alt="logo" width={112} height={48} />
+        {/* <div className="w-28 h-12">
+        </div> */}
         <div className="hidden md:block w-full">
           <NavMenu />
         </div>
