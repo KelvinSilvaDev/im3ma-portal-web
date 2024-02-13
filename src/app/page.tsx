@@ -17,7 +17,7 @@ export default function Home() {
       <section className="py-8 h-[91.1vh] px-8 xl:px-0">
         <h2 className={`text-center ${articulat.className} font-bold text-3xl`}>CONHEÇA O QUE É O ID</h2>
         <h4 className={`text-center ${articulat.className} font-black text-md`}>A IDENTIDADE DE CRISTO NO MUNDO</h4>
-        <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto h-full p-4">
+        <div className="grid grid-cols-2 gap-4 max-w-5xl mx-auto h-full p-4">
           <div className="col-span-2 bg-red-500 w-full h-full rounded-lg" />
           <div className="col-span-2 md:col-span-1 bg-red-500 w-full h-full rounded-lg" />
           <div className="col-span-2 md:col-span-1 bg-red-500 w-full h-full rounded-lg" />
