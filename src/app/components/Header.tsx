@@ -32,7 +32,7 @@ const NavMenu = () => {
     <nav className="flex h-full md:h-auto justify-around items-evenly flex-col md:flex-row md:justify-start lg:justify-evenly lg:w-full xl:w-10/12 gap-2 md:px-6">
       {
         navLinks.map((link, index) => (
-          <a key={index} href={link.url} className={`flex justify-center items-center text-white text-lg font-bold md:text-sm md:font-thin w-full md:w-auto px-8 md:px-0 h-14 py-4 md:py-0 md:h-auto md:gap-0 tracking-widest text-gray-200 ${articulat.className}`}>{link.title}</a>
+          <a key={index} href={link.url} className={`flex justify-center items-center text-lg font-bold md:text-sm md:font-thin w-full md:w-auto px-8 md:px-0 h-14 py-4 md:py-0 md:h-auto md:gap-0 tracking-widest text-gray-200 ${articulat.className}`}>{link.title}</a>
         ))
       }
     </nav>
@@ -47,7 +47,7 @@ export function Header() {
   return (
     <header className="bg-[#1f1f1f] w-full">
       <div className="container flex justify-evenly items-center md:px-8 relative mx-auto">
-          <Image src="/mema_nome_branco.png" alt="logo" width={112} height={48} />
+          <Image src="/mema_nome_branco.png" alt="logo" width={112} height={48} className=" w-28 h-12 md:w-54 md:h-auto" />
         <div className="hidden md:block w-full">
           <NavMenu />
         </div>
