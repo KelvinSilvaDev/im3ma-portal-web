@@ -1,4 +1,4 @@
-import { articulat } from "./fonts"
+import { articulat } from "../fonts"
 
 export default function Home() {
   return (

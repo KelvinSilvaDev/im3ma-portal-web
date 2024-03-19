@@ -3,6 +3,7 @@ import { AlignJustify, Plus } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 import { articulat } from "../fonts"
+import Link from "next/link"
 
 const navLinks = [
   {
@@ -47,11 +48,13 @@ export function Header() {
   return (
     <header className="bg-[#1f1f1f] w-full">
       <div className="container flex justify-evenly items-center md:px-8 relative mx-auto">
-          <Image src="/mema_nome_branco.png" alt="logo" width={112} height={48} className=" w-28 h-12 md:w-54 md:h-auto" />
+        <Image src="/mema_nome_branco.png" alt="logo" width={112} height={48} className=" w-28 h-12 md:w-54 md:h-auto" />
         <div className="hidden md:block w-full">
           <NavMenu />
         </div>
-        <button className="bg-blue-600 text-white rounded-md py-2 px-6 w-56">FAÇA SEU LOGIN</button>
+        <Link href="/login">
+          <button className="bg-blue-600 text-white rounded-md py-2 px-6 w-56">FAÇA SEU LOGIN</button>
+        </Link>
         <AlignJustify onClick={handleMenu} className={`${isOpen ? 'hidden' : 'block'} block md:hidden`} />
         {
           isOpen && (
